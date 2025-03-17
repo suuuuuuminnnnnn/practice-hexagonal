@@ -5,5 +5,5 @@ import practice.architecture.hexagonal.presentation.data.response.GetOrderRespon
 import java.util.List;
 
 public interface GetOrderUseCase {
-    List<GetOrderResponse> getOrders(String customerName);
+    List<GetOrderResponse> execute(String customerName);
 }
