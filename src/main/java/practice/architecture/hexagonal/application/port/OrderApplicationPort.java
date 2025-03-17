@@ -9,7 +9,7 @@ public interface OrderApplicationPort {
 
     void createOrder(String productName, String customerName, OrderStatus orderStatus);
 
-    void cancelOrder(String orderId);
+    void cancelOrder(Long orderId);
 
     List<GetOrderResponse> findOrderByCustomerName(String customerName);
 }
