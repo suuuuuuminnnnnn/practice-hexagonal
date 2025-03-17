@@ -4,6 +4,6 @@ import practice.architecture.hexagonal.presentation.data.response.GetOrderRespon
 
 import java.util.List;
 
-public interface GetOrderUseCase {
+public interface FindOrderByCustomerNameUseCase {
     List<GetOrderResponse> execute(String customerName);
 }

@@ -4,14 +4,14 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import practice.architecture.hexagonal.adapter.out.persistence.OrderJpaEntity;
 import practice.architecture.hexagonal.adapter.out.persistence.OrderRepository;
-import practice.architecture.hexagonal.application.useCase.GetOrderUseCase;
+import practice.architecture.hexagonal.application.useCase.FindOrderByCustomerNameUseCase;
 import practice.architecture.hexagonal.presentation.data.response.GetOrderResponse;
 
 import java.util.List;
 
 @Service
 @RequiredArgsConstructor
-public class GetOrderService implements GetOrderUseCase {
+public class FindOrderByCustomerNameService implements FindOrderByCustomerNameUseCase {
 
     private final OrderRepository orderRepository;
 
