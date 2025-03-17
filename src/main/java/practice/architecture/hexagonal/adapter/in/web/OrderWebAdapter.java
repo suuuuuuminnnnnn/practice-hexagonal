@@ -4,8 +4,8 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-import practice.architecture.hexagonal.application.data.request.CreateOrderRequest;
-import practice.architecture.hexagonal.application.data.response.GetOrderResponse;
+import practice.architecture.hexagonal.presentation.data.request.CreateOrderRequest;
+import practice.architecture.hexagonal.presentation.data.response.GetOrderResponse;
 import practice.architecture.hexagonal.application.port.OrderApplicationPort;
 
 import java.util.List;

@@ -1,4 +1,4 @@
-package practice.architecture.hexagonal.application.data.request;
+package practice.architecture.hexagonal.presentation.data.request;
 
 import practice.architecture.hexagonal.domain.type.OrderStatus;
 

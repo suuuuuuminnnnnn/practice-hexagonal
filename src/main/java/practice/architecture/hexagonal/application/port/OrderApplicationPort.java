@@ -1,6 +1,6 @@
 package practice.architecture.hexagonal.application.port;
 
-import practice.architecture.hexagonal.application.data.response.GetOrderResponse;
+import practice.architecture.hexagonal.presentation.data.response.GetOrderResponse;
 import practice.architecture.hexagonal.domain.type.OrderStatus;
 
 import java.util.List;
