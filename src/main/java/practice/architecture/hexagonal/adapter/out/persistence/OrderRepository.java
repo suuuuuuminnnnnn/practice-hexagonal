@@ -4,6 +4,8 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
 import practice.architecture.hexagonal.domain.type.OrderStatus;
 
+import java.util.List;
+
 @Slf4j
 @Component
 public class OrderRepository {
@@ -19,5 +21,16 @@ public class OrderRepository {
                 .customerName("나현욱")
                 .orderStatus(OrderStatus.COMPLETED)
                 .build();
+    }
+
+    public List<OrderJpaEntity> findByCustomerName(String customerName) {
+        return List.of(
+                OrderJpaEntity.builder()
+                        .orderId(1L)
+                        .productName("코카 콜라")
+                        .customerName("나현욱")
+                        .orderStatus(OrderStatus.COMPLETED)
+                        .build()
+        );
     }
 }
