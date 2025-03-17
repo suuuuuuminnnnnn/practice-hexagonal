@@ -4,6 +4,7 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import practice.architecture.hexagonal.domain.type.OrderStatus;
 
 @Entity
 public class Order {
@@ -16,5 +17,5 @@ public class Order {
 
     private String customerName;
 
-    private boolean orderStatus;
+    private OrderStatus orderStatus;
 }
