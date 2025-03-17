@@ -2,7 +2,6 @@ package practice.architecture.hexagonal.adapter.out.persistence;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
-import practice.architecture.hexagonal.domain.Order;
 import practice.architecture.hexagonal.domain.type.OrderStatus;
 
 @Slf4j
@@ -13,8 +12,8 @@ public class OrderRepository {
         System.out.println("주문이 삭제되었습니다.");
     }
 
-    public Order findById(String id) {
-        return Order.builder()
+    public OrderJpaEntity findById(Long id) {
+        return OrderJpaEntity.builder()
                 .orderId(Long.valueOf("1"))
                 .productName("코카 콜라")
                 .customerName("나현욱")

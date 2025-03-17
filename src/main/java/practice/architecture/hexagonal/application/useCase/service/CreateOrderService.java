@@ -5,7 +5,6 @@ import org.springframework.stereotype.Service;
 import practice.architecture.hexagonal.adapter.out.persistence.OrderJpaEntity;
 import practice.architecture.hexagonal.adapter.out.persistence.OrderRepository;
 import practice.architecture.hexagonal.application.useCase.CreateOrderUseCase;
-import practice.architecture.hexagonal.domain.Order;
 import practice.architecture.hexagonal.domain.type.OrderStatus;
 
 @Service
